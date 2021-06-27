@@ -7,7 +7,7 @@ const Navbar = () => {
             </NavLink>
             
             <NavLink className="w3-bar-item w3-button" to="/registrar" exact>
-                Registros
+                Registrar
             </NavLink>
 
             <NavLink className="w3-bar-item w3-button" to="/" exact>
