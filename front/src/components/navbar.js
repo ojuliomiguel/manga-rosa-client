@@ -10,6 +10,10 @@ const Navbar = () => {
                 Registrar
             </NavLink>
 
+            <NavLink className="w3-bar-item w3-button" to="/registros" exact>
+                Registros
+            </NavLink>
+
             <NavLink className="w3-bar-item w3-button" to="/" exact>
                 Validar
             </NavLink>
