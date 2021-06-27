@@ -28,7 +28,7 @@ const ColaboradorForm = () => {
         setIdsConhecimentos(selectedList.map( c => c.id))
     }
 
-    function onSubmit(formValues) {
+    async function onSubmit(formValues) {
         const {nome, email, cpf, celular} = formValues;
         
         const data = {
@@ -38,8 +38,20 @@ const ColaboradorForm = () => {
             celular,
             idsConhecimentos
         }
+
+        if (!idsConhecimentos.length) {
+            return alert('É necessário inserir ao menos um conhecimento')
+        }
         
-        api.post('colaboradores/registrar', data)
+       try {
+            await api.post('colaboradores/registrar', data)   
+       } catch (error) {
+           alert(error.response.data.message)
+          
+       } 
+       
+
+      
     }
 
     return (
