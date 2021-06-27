@@ -5,13 +5,13 @@ import {
   Route,
 } from 'react-router-dom';
 import App from '../App';
-import Home from './home/home';
+import ColaboradorForm from './form/form';
 
 const Root = () => {
   return (
     <Router>
       <Switch>
-        <Route path="*/registrar" component={Home} /> 
+        <Route path="*/registrar" component={ColaboradorForm} /> 
         <Route path="/" component={App} />
       </Switch>
     </Router>
