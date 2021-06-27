@@ -20,7 +20,6 @@ const ColaboradorForm = () => {
         api.get('conhecimentos/registros')
             .then((res) => {
                 setConhecimentos(res.data);
-                console.log(conhecimentos);
             })
     }, [])
 
