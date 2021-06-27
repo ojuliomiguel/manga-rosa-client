@@ -43,7 +43,9 @@ const ColaboradorForm = () => {
         }
         
        try {
-            await api.post('colaboradores/registrar', data)   
+            await api.post('colaboradores/registrar', data) 
+            window.location.reload();
+              
        } catch (error) {
            alert(error.response.data.message)
           
