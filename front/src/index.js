@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './pages/Root';
+import Root from './pages/root';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
