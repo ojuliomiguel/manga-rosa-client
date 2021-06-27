@@ -49,8 +49,6 @@ const ColaboradorForm = () => {
            alert(error.response.data.message)
           
        } 
-       
-
       
     }
 
